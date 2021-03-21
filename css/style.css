@@ -1,0 +1,182 @@
+@charset "UTF-8";
+* {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  color: #fff;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  background-color: #2D2E2D;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1274px;
+  padding: 15px;
+}
+
+@font-face {
+  font-family: "Nixie One";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: url("../fonts/NixieOne-Regular.ttf") format("woff2");
+}
+
+.header {
+  background: linear-gradient(90.35deg, #000000 0%, rgba(0, 0, 0, 0.7) 100.06%, rgba(13, 15, 13, 2.84679e-08) 101.5%);
+  -webkit-box-shadow: 0px 4px 4px rgba(255, 185, 108, 0.71);
+          box-shadow: 0px 4px 4px rgba(255, 185, 108, 0.71);
+}
+
+.header__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+  margin: auto;
+  max-width: 1274px;
+  height: 147px;
+}
+
+.header__logo {
+  height: 79px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__nav {
+  height: 79px;
+  font-size: 20px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.logo__title {
+  font-size: 24px;
+}
+
+.logo__title h1 {
+  position: relative;
+  font-weight: 100;
+}
+
+.logo__title_ptero {
+  margin: 0;
+  width: 121px;
+  max-height: 50px;
+  border-bottom: 1px solid #FFB96C;
+}
+
+.logo__title_news {
+  margin: 0;
+  min-height: 45px;
+  margin-left: 120px;
+  border-left: 1px solid #FFB96C;
+}
+
+.nav__top {
+  position: relative;
+  font-weight: 400;
+}
+
+.nav__top::before {
+  content: '';
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #615F58;
+  margin-bottom: -12px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.nav__top a {
+  width: 124px;
+}
+
+.nav__top a:not(:last-child) {
+  margin-right: 23px;
+}
+
+.nav__title {
+  position: relative;
+}
+
+.nav__title::before {
+  content: '';
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #615F58;
+  margin-bottom: -12px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.nav__title:hover:before {
+  width: 100%;
+  background: #FFB96C;
+}
+
+.nav__title:hover {
+  color: #FFB96C;
+  margin-right: 0;
+}
+
+.nav__title:not(:last-child) {
+  margin-right: 0px;
+}
+
+.nav__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 700;
+}
+
+.nav__bottom a {
+  margin-top: 25px;
+}
+
+.nav__bottom a:not(:last-child) {
+  margin-right: 33px;
+}

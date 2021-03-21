@@ -1,0 +1,25 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color: #fff;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    background-color: #2D2E2D;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1274px;
+    padding: 15px;
+}
+
+@font-face {
+    font-family: "Nixie One";
+    font-style: normal;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: url("../fonts/NixieOne-Regular.ttf") format("woff2");
+}
